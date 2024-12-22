@@ -18,13 +18,13 @@ class Roster:
         
 
         self.addStudent(array[0], array[1], array[2], array[3], array[4], [array[5],array[6], array[7]], degree)
-        return
+    
 
     def addStudent(self, id,  firstName,  lastName,  emailAddress,  age, coursedays,  degreeprogram):
         student = Student(id, firstName, lastName, emailAddress, age, degreeprogram, coursedays)
         self.studentRoster.append(student)
         self.totalStudents = self.totalStudents + 1
-        return
+        
     
     def removeStudent(self, id):
         located = False
@@ -35,12 +35,12 @@ class Roster:
                 located = True
         if located == False:
            print("The student with the ID: " + id + " was not found.")
-        return
+        
     
     def printAllStudents(self):
         for student in self.studentRoster:
             student.Print()
-        return
+        
     
     def printAverageDaysInCourse(self, id):
         totalDays = 0
@@ -53,17 +53,17 @@ class Roster:
         averageDays = totalDays / 3;
 
         print("Student ID: " + id + ", Average days in course is: " + str(averageDays))
-        return
+        
     
     def printInvalidEmails(self): 
         for student in self.studentRoster:
             email = student.getEmail()
             if " " in email or not "@" in email or not "." in email:
                 print(email + " - Is invalid.")
-        return
+        
     
     def printByDegreeProgram(self, degree):
         for student in self.studentRoster:
             if student.getDegree() == degree:
                student.Print()
-        return
+        
