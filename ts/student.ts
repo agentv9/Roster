@@ -37,6 +37,6 @@ export default class Student {
 
 
     Print():void {
-        console.log(`${this.getID()}    ${this.getFirstName()}    ${this.getLastName()}    ${this.getEmail()}    ${this.getEmail()}    ${this.getAge()}    ${this.getDegree()}    ${this.getCourseDays()}`)
+        console.log(`${this.getID()}    ${this.getFirstName()}    ${this.getLastName()}    ${this.getEmail()}    ${this.getAge()}    ${this.getDegree()}    ${this.getCourseDays()}`)
     }
 }

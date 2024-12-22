@@ -34,4 +34,4 @@ class Student:
     def setCourseDays(self, days): self.CourseDays = days
 
     def Print(self):
-        print(self.getID()+"   "+self.getFirstName()+"   "+self.getLastName()+"   "+self.getEmail()+"   "+self.getEmail()+"   "+self.getAge()+"   "+str(self.getDegree())+"   "+str(self.getCourseDays()))
+        print(self.getID()+"   "+self.getFirstName()+"   "+self.getLastName()+"   "+self.getEmail()+"   "+self.getAge()+"   "+str(self.getDegree())+"   "+str(self.getCourseDays()))

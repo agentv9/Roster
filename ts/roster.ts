@@ -46,7 +46,6 @@ export default class Roster {
     }
     printAverageDaysInCourse(id: string):void {
         let totalDays:number = 0
-        let averageDays
 
         for(let i = 0; i < this.studentRoster.length; i++) {
             if(this.studentRoster[i].getID() == id){
@@ -55,7 +54,7 @@ export default class Roster {
                 }
             }
         }
-        averageDays = totalDays / 3;
+        let averageDays = totalDays / 3;
 
         console.log("Student ID: " + id + ", Average days in course is: " + averageDays)
         return
