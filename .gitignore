@@ -1,1 +1,5 @@
-/ts/node-modules
+/ts/node_modules
+/python/__pycache__
+/cpp/.vs
+/cpp/x64
+/cpp/cpp/x64

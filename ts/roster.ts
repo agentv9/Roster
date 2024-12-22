@@ -5,8 +5,6 @@ export default class Roster {
 
     studentRoster: Array<Student> = []
 
-    totalStudents: number = 0
-    nextid: number = 0
 
     parseString(data:string): void {
         let array = data.split(',')

@@ -17,33 +17,33 @@ for(let i = 0; i < studentData.length; i++) {
 }
 
 
-console.log("Display all students:")
+console.log("\nDisplay all students:")
 
 roster.printAllStudents();
 
  
 
-console.log("Display invalid emails:")
+console.log("\nDisplay invalid emails:")
 roster.printInvalidEmails();
  
-
+console.log("\n")
 for (let i = 0; i < 5; i++) {
     roster.printAverageDaysInCourse(roster.studentRoster[i].getID());
 }
  
 
-console.log("Showing students from degree program: SOFTWARE")
+console.log("\nShowing students from degree program: SOFTWARE")
 
 roster.printByDegreeProgram(Degree.SOFTWARE);
 
  
 
-console.log("Removing A3")
+console.log("\nRemoving A3")
 roster.removeStudent("A3");
 roster.printAllStudents();
  
 
-console.log("Removing A3 again")
+console.log("\nRemoving A3 again")
 roster.removeStudent("A3");
 
-console.log("Program finished")
+console.log("\nProgram finished")
